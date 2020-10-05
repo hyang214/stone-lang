@@ -1,4 +1,4 @@
-package com.github.hyang214.stone.lang;
+package com.github.hyang214.stone.lang.exception;
 
 /**
  * title:

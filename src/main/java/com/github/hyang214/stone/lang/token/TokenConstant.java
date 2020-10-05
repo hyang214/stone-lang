@@ -1,4 +1,4 @@
-package com.github.hyang214.stone.lang;
+package com.github.hyang214.stone.lang.token;
 
 /**
  * title: 常量
@@ -6,7 +6,7 @@ package com.github.hyang214.stone.lang;
  * @author Hao YANG
  * @since 2020.10.04
  */
-public class Constant {
+public class TokenConstant {
 
     /**
      * 换行符
@@ -26,7 +26,7 @@ public class Constant {
     /**
      * 标识符正则
      */
-    public static final String IDENTIFIER_PATTERN = "[A-Z_a-z][A-Z_a-z0-9]*|==|<=|>=|&&\\|\\|\\p{Punct}";
+    public static final String IDENTIFIER_PATTERN = "[A-Z_a-z][A-Z_a-z0-9]*|==|<=|>=|&&\\|\\||\\p{Punct}";
 
     /**
      * 数字正则
@@ -41,12 +41,12 @@ public class Constant {
     /**
      * token正则格式
      */
-    public static final String TOKEN_PATTERN_FORMAT = "%s(%s|%s|%s|%s)?";
+    public static final String TOKEN_PATTERN_FORMAT = "%s((%s)|(%s)|(%s)|%s)?";
 
     /**
      * token正则
      */
     public static final String TOKEN_PATTERN = String.format(TOKEN_PATTERN_FORMAT,
-            BLANK_PATTERN, COMMENT_PATTERN, IDENTIFIER_PATTERN, NUMBER_PATTERN, STRING_PATTERN);
+            BLANK_PATTERN, COMMENT_PATTERN, NUMBER_PATTERN, STRING_PATTERN, IDENTIFIER_PATTERN);
 
 }

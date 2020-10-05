@@ -1,4 +1,6 @@
-package com.github.hyang214.stone.lang;
+package com.github.hyang214.stone.lang.token;
+
+import com.github.hyang214.stone.lang.exception.StoneException;
 
 /**
  * title: Token抽象类
